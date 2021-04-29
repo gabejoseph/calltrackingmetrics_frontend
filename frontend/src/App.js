@@ -2,7 +2,6 @@ import React from 'react';
 import Home from './containers/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import SearchPage from './containers/SearchPage'
 import Login from './containers/Login'
 import Register from './containers/Register'
 
@@ -22,7 +21,6 @@ function App() {
             <Switch>
               <Route path="/home" component={Home} />
               <Route path="/register" component={Register} />
-              <Route path="/search" component={SearchPage} />
               <Route path="/" component={Login} />
             </ Switch>
 

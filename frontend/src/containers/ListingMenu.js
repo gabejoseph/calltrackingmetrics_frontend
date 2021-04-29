@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import TextField from '@material-ui/core/TextField'
 import { listingActions } from '../actions/listing.actions';
-import Button from '@material-ui/core/Button'
+import { Button } from '@material-ui/core'
 import './ListingMenu.css'
 
 class SimpleMenu extends React.Component {
@@ -59,9 +59,7 @@ class SimpleMenu extends React.Component {
                     <div className="help-block">A number to send to is required</div>
                 }
             </div>
-            <div className="form-group">
-              <button className="btn btn-primary">Submit</button>
-            </div>
+            <Button type="submit" className="btn btn-primary">Submit</Button>
         </form>
       </div>
     );

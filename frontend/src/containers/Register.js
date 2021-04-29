@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-
 import { userActions } from '../actions/user.actions'
 
 class Register extends React.Component {
