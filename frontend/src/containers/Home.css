@@ -1,0 +1,6 @@
+.home_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
