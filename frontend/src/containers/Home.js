@@ -26,21 +26,28 @@ class Home extends React.Component {
                         listing && !loading 
                         ?
                         listing.map(list => 
+                            list.direction === "outbound-api" ?
                             <Card 
-                                src=""
+                                src="https://churchos-uploads.s3.amazonaws.com/2020/10/31/22/39/59/ad4e3d27-28c9-48cd-bcd8-7021aff225c7/Sent.jpg"
                                 title={list.to}
                                 description={list.body} 
+                            />
+                            :
+                            <Card 
+                            src="https://bluefieldhighschool.files.wordpress.com/2017/03/icoming-logo-final.jpg"
+                            title={list.from}
+                            description={list.body} 
                             />
                         )
                         :
                         <></>
                     }
-                    <Card 
-                        src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
-                        title="Welcome!"
-                        description="CallTrackingMetrics lets users send and receive text messages.  Try it out!"
-                    />
                 </div>
+                <Card 
+                    src="https://a0.muscache.com/im/pictures/eb9c7c6a-ee33-414a-b1ba-14e8860d59b3.jpg?im_w=720"
+                    title="Welcome!"
+                    description="CallTrackingMetrics lets users send and receive text messages.  Try it out!"
+                />
             </div>
         )
     }
