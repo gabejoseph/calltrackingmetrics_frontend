@@ -20,12 +20,14 @@ function login(email, password) {
                 user => { 
                     dispatch(success(user));
                     history.push('/home');
-                    window.location.reload();
+                    window.location.reload()
                 },
                 error => {
                     dispatch(failure(error.toString()));
                     dispatch(alertActions.error(error.toString())
                     );
+                    history.push('/')
+                    window.location.reload()
                 },
             )
 
